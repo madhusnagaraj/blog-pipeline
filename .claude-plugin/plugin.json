@@ -1,0 +1,7 @@
+{
+  "name": "blog-pipeline",
+  "version": "0.1.0",
+  "description": "A multi-agent idea-to-draft blog pipeline for Claude Code: scout ideas, research, run experiments, draft in your voice, critique with a multi-lens panel (plus real cross-model critiques), revise, illustrate, and build a publish-ready draft. It never publishes - you do.",
+  "author": { "name": "madhusnagaraj" },
+  "license": "MIT"
+}
