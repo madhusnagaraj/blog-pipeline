@@ -58,12 +58,17 @@ else
 fi
 
 # --- 3. Bring main up to date with origin (fast-forward only) --------------------------------
-if git remote get-url origin >/dev/null 2>&1; then
+# Only touches the remote when a push is actually intended (PUSH=1). With --no-push this step
+# is skipped entirely, so a missing/unreachable origin never blocks a local-only land.
+if [[ "$PUSH" -eq 1 ]] && git remote get-url origin >/dev/null 2>&1; then
   say "Fetching origin"
-  git fetch --quiet origin || die "git fetch failed."
-  if git -C "$MAINWT" rev-parse --verify --quiet origin/main >/dev/null; then
-    say "Fast-forwarding local main to origin/main"
-    git -C "$MAINWT" merge --ff-only origin/main || die "Local main and origin/main have diverged; resolve by hand."
+  if git fetch --quiet origin; then
+    if git -C "$MAINWT" rev-parse --verify --quiet origin/main >/dev/null; then
+      say "Fast-forwarding local main to origin/main"
+      git -C "$MAINWT" merge --ff-only origin/main || die "Local main and origin/main have diverged; resolve by hand."
+    fi
+  else
+    printf '\n\033[1;33m⚠ Could not fetch origin (offline or unreachable). Continuing with a local-only land; push yourself once you can reach the remote.\033[0m\n'
   fi
 fi
 

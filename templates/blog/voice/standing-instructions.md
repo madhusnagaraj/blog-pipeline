@@ -10,5 +10,8 @@ these defaults are a reasonable starting point.
 - **Disclaimer:** TODO — if you want a standing disclaimer (e.g. "Views are my own"), write the
   exact sentence here; the drafter and builder will include it. Write `none` if not.
 - **Formatting rules:** TODO — any hard bans (e.g. specific punctuation, emoji, heading depth).
+  Default the drafter follows unless you remove it: separate a piece's 3–5 movements with `---`.
 - **Length:** TODO — target word-count range (e.g. 900–1600).
+- **Substance over synthesis:** synthesis without a defensible original angle is a summary, not
+  an essay. If the transforming gate finds nothing changed while writing, believe it.
 - **Never publish:** the pipeline stops at a draft. Only the human clicks Publish.

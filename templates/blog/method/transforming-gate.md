@@ -17,7 +17,7 @@ Their sharp point: knowledge-transforming is not a better knowledge-telling. It 
 definition of the task. A pipeline can execute every other stage perfectly and still ship
 knowledge-telling.
 
-This repo already states the conclusion without the theory. `voice/standing-instructions.md`:
+The default `voice/standing-instructions.md` already states the conclusion without the theory:
 "Synthesis without a defensible original angle is a summary, not an essay."
 
 ## Why this pipeline is already built for it

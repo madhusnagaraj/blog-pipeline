@@ -54,11 +54,12 @@ Three design choices do most of the work:
 
 ## Install
 
-Add this repo as a Claude Code plugin (via your marketplace config or a local clone):
-
 ```bash
-claude plugin add <path-or-repo>
+claude plugin marketplace add madhusnagaraj/blog-pipeline
+claude plugin install blog-pipeline@blog-pipeline
 ```
+
+(For a local clone instead of GitHub, point the first command at the clone's path.)
 
 Then, in the project where you want to write:
 
@@ -106,6 +107,9 @@ the pipeline stops rediscovering writing craft one post at a time. Sources are c
 
 - Stops at a draft, always. The publish click is yours.
 - Never enters credentials anywhere.
-- A de-identify gate greps drafts and evidence for employer/client/product/internal references
-  before anything goes near public output.
+- A de-identify instruction, given to every drafting/build/publish-facing agent, has it scan for
+  employer/client/product/internal references before anything goes near public output. This is a
+  prompted discipline, not a scripted scanner — review the draft yourself before publishing.
 - Browser stages run serially — one shared browser, never parallel drivers.
+- The `thesis`/`build` track's experimenter writes and runs code on your machine, in an isolated
+  git worktree. Review what it does before landing it, the same as any code you'd run yourself.

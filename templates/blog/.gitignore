@@ -1,0 +1,9 @@
+# Keep experiment fallout out of commits — the experimenter runs generated code under
+# posts/<slug>/experiment/, which is exactly where a stray .env, credential, or captured
+# API response can land.
+.env
+.env.*
+**/experiment/**/.env
+**/experiment/**/node_modules/
+**/experiment/**/__pycache__/
+**/experiment/**/*.log

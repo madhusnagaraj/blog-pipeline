@@ -3,8 +3,8 @@
 Source: Booth, Colomb, Williams, Bizup & FitzGerald, *The Craft of Research*, 5th ed.
 (University of Chicago Press, 2024). Argument skeleton after Toulmin, *The Uses of Argument* (1958).
 
-The pipeline's briefs have historically jumped from **topic** straight to **thesis**. The two
-intervening moves are what separate a post that is merely correct from one that is needed.
+It is easy for a brief to jump from **topic** straight to **thesis**. The two intervening moves
+are what separate a post that is merely correct from one that is needed.
 
 ## The four steps (do all four, in order)
 
@@ -23,7 +23,7 @@ parts:
    cost or drop the idea. This is the "So what?" test, and it is the whole point of the step.
 
 **4. Claim.** The answer to the question, stated so it could be wrong. Prefer the narrowest
-version the evidence supports (this repo's existing rule, unchanged).
+version the evidence supports.
 
 ## The argument skeleton
 

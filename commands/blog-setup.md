@@ -28,6 +28,7 @@ blog/
   config.md        # filled with the answers from step 2
   pipeline.md      # the backlog manifest (empty table)
   inbox.md         # quick-capture file
+  .gitignore       # keeps experiment fallout (.env, credentials) out of commits
   voice/           # voice-guide.md, standing-instructions.md, examples.md — TEMPLATES to fill
   method/          # the craft canon — usable as-is, editable
   posts/           # empty; one folder per post slug

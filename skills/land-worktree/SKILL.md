@@ -33,7 +33,11 @@ git diff --stat HEAD
 git log --oneline main..HEAD   # commits this branch will add (may be empty if all work is uncommitted)
 ```
 
-Summarize for the user: which files changed and the branch/main state.
+Summarize for the user: which files changed and the branch/main state. `git status --short`'s
+untracked-file list is exactly what step 3's `git add -A` is about to commit — call it out
+explicitly (not just print it) so the user is knowingly approving those files, not skimming past
+them. This matters most right after an experiment stage, which can leave a stray `.env`,
+credential, or captured API response in `posts/<slug>/experiment/`.
 
 ## 2. Confirm
 

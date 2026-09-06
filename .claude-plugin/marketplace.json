@@ -1,0 +1,30 @@
+{
+  "name": "blog-pipeline",
+  "owner": {
+    "name": "madhusnagaraj",
+    "url": "https://github.com/madhusnagaraj"
+  },
+  "metadata": {
+    "description": "A multi-agent idea-to-draft blog pipeline for Claude Code",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "blog-pipeline",
+      "source": {
+        "source": "github",
+        "repo": "madhusnagaraj/blog-pipeline",
+        "ref": "main"
+      },
+      "description": "A multi-agent idea-to-draft blog pipeline for Claude Code: scout ideas, research, run experiments, draft in your voice, critique with a multi-lens panel (plus real cross-model critiques), revise, illustrate, and build a publish-ready draft. It never publishes - you do.",
+      "version": "0.1.0",
+      "author": {
+        "name": "madhusnagaraj",
+        "url": "https://github.com/madhusnagaraj"
+      },
+      "homepage": "https://github.com/madhusnagaraj/blog-pipeline",
+      "repository": "https://github.com/madhusnagaraj/blog-pipeline",
+      "license": "MIT"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ one engineer hitting one wrong number, it cannot resolve on the future of the in
 on an industry-wide condition, resolving on one bug is an anticlimax. Mismatched widths are the most
 common structural failure, and they read as either over-claiming or fizzling out.
 
-This repo's existing rule "close loops back to the opening thesis" is this constraint. Keep it.
+The familiar advice "close loops back to the opening thesis" is this constraint stated informally.
 
 **Movements.** Three to five, separated by `---`, per `blog/voice/standing-instructions.md`. Map
 them onto OCAR before drafting; do not discover the arc afterward.
